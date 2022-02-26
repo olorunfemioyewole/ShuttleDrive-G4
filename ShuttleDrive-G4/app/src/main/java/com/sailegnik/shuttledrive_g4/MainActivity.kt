@@ -10,36 +10,58 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var journeyDate: Button
-    private lateinit var tvjourneyDate: TextView
+    private lateinit var returnDate: Button
+    private lateinit var tvJourneyDate: TextView
+    private lateinit var tvReturnDate: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        //date picker
         journeyDate = findViewById(R.id.journey_date)
-        tvjourneyDate = findViewById(R.id.tv_journey_date)
+        tvJourneyDate = findViewById(R.id.tv_journey_date)
+        returnDate = findViewById(R.id.return_date)
+        tvReturnDate = findViewById(R.id.tv_return_date)
 
-        val Calendar = Calendar.getInstance()
+        val myCalendar = Calendar.getInstance()
 
-        val datePicker = DatePickerDialog.OnDateSetListener{view, year,month,dayOfMonth ->
+        val datePickerJ = DatePickerDialog.OnDateSetListener{view, year,month,dayOfMonth ->
             myCalendar.set(Calendar.YEAR, year)
             myCalendar.set(Calendar.MONTH, month)
             myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
-            updateLable(myCalendar)
+            updateJourney(myCalendar)
+        }
+        val datePickerR = DatePickerDialog.OnDateSetListener{view, year,month,dayOfMonth ->
+            myCalendar.set(Calendar.YEAR, year)
+            myCalendar.set(Calendar.MONTH, month)
+            myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+            updateReturn(myCalendar)
         }
 
         journeyDate.setOnClickListener{
-            DatePickerDialog(this, datePicker, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+            DatePickerDialog(this, datePickerJ, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+            myCalendar.get(Calendar.DAY_OF_MONTH)).show()
+        }
+        returnDate.setOnClickListener{
+            DatePickerDialog(this, datePickerR, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
             myCalendar.get(Calendar.DAY_OF_MONTH)).show()
         }
 
 
     }
 
-    private fun updateLable(myCalendar: Calendar){
+    private fun updateJourney(myCalendar: Calendar){
         val myFormat = "dd-MM-yyyy"
         val sdf = SimpleDateFormat(myFormat, Locale.UK)
-        tvjourneyDate.setText(sdf.format(myCalendar.time))
+        tvJourneyDate.setText(sdf.format(myCalendar.time))
+    }
+
+    private fun updateReturn(myCalendar: Calendar){
+        val myFormat = "dd-MM-yyyy"
+        val sdf = SimpleDateFormat(myFormat, Locale.UK)
+        tvReturnDate.setText(sdf.format(myCalendar.time))
     }
 
 
