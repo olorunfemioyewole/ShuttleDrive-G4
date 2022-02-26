@@ -22,22 +22,22 @@ class MainActivity : AppCompatActivity() {
         val Calendar = Calendar.getInstance()
 
         val datePicker = DatePickerDialog.OnDateSetListener{view, year,month,dayOfMonth ->
-            Calendar.set(Calendar.YEAR, year)
-            Calendar.set(Calendar.MONTH, month)
-            Calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
-            updateLable(Calendar)
+            myCalendar.set(Calendar.YEAR, year)
+            myCalendar.set(Calendar.MONTH, month)
+            myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+            updateLable(myCalendar)
         }
 
         journeyDate.setOnClickListener{
-            DatePickerDialog(this, datePicker, Calendar.get(Calendar.YEAR), Calendar.get(Calendar.MONTH),
-            Calendar.get(Calendar.DAY_OF_MONTH)).show()
+            DatePickerDialog(this, datePicker, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+            myCalendar.get(Calendar.DAY_OF_MONTH)).show()
         }
 
 
     }
 
     private fun updateLable(myCalendar: Calendar){
-        val myFormat = "dd-mm-yyyy"
+        val myFormat = "dd-MM-yyyy"
         val sdf = SimpleDateFormat(myFormat, Locale.UK)
         tvjourneyDate.setText(sdf.format(myCalendar.time))
     }
