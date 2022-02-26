@@ -1,18 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include layout = "@layout/action_bar"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <!--        form for booking-->
+            <!-- Input 1 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/from_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="From:"
+                android:layout_below="@+id/answer_view"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColorHint="#616161" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/to_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="To:"
+                android:layout_below="@+id/answer_view"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColorHint="#616161" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_journey_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journey date"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/journey_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Pick Date"
+                />
+
+            <Button
+                android:id="@+id/return_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="87dp"
+                android:text="Date of Return"/>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

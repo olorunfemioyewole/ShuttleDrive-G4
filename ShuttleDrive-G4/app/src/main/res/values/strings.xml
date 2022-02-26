@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ShuttleDrive-G4</string>
+    <string name="skip_intro">SKIP</string>
+    <string name="next">NEXT</string>
 </resources>

@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+<!--    Custom colors for shuttle drive-->
+    <color name="orange">#FFFFAD00</color>
+    <color name="orange2">#FF7B00</color>
+    <color name="colorPrimary">#FFFFAD00</color>
+    <color name="indicatorColor">#339933</color>
 </resources>

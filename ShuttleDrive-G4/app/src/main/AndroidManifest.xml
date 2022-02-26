@@ -10,8 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShuttleDriveG4">
         <activity
+            android:name=".intro.IntroActivity"
+            android:exported="false"
+            android:theme="@style/Theme.IntroSlides"/>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" />
+        <activity
+            android:name=".splashscreen.SplashUIActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SplashUI">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
