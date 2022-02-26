@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@color/white"
     android:orientation="vertical">
 
-    <include layout = "@layout/action_bar"/>
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp"
-            android:gravity="center">
+        <include layout="@layout/action_bar"/>
 
-            <!--        form for booking-->
-            <!-- Input 1 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:padding="10dp">
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/from_loc"
                 android:layout_width="match_parent"
@@ -129,30 +123,8 @@
                 android:text="Pick Date"
                 android:backgroundTint="@color/orange"
                 android:fontFamily="@font/poppins"/>
-        </LinearLayout>
+        </RelativeLayout>
 
-        <!--<LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="10dp">
+    </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Available Shuttles"
-                android:fontFamily="@font/poppins"/>
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/splash"
-                android:scaleType="fitCenter"/>
-        </LinearLayout>-->
-
-
-
-    </ScrollView>
-
-</LinearLayout>
+</ScrollView>
