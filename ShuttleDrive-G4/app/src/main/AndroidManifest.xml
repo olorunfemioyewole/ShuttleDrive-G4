@@ -10,9 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShuttleDriveG4">
         <activity
+            android:name=".ticket.TicketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cart.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".about.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".booking.BookingActivity"
+            android:exported="false" />
+        <activity
             android:name=".intro.IntroActivity"
             android:exported="false"
-            android:theme="@style/Theme.IntroSlides"/>
+            android:theme="@style/Theme.IntroSlides" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

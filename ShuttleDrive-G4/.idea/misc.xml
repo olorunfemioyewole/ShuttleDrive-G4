@@ -6,11 +6,17 @@
         <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/drawable-v24/indicator_active.xml" value="0.1795" />
         <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/drawable-v24/indicator_inactive.xml" value="0.1795" />
         <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/layout/action_bar.xml" value="0.24270833333333333" />
+        <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/layout/activity_about.xml" value="0.24270833333333333" />
+        <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/layout/activity_booking.xml" value="0.2" />
+        <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/layout/activity_cart.xml" value="0.24270833333333333" />
         <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/layout/activity_intro.xml" value="0.24270833333333333" />
-        <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/layout/activity_main.xml" value="0.24270833333333333" />
         <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/layout/activity_splash_uiactivity.xml" value="0.264" />
+        <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/layout/activity_ticket.xml" value="0.22552083333333334" />
+        <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/layout/drop_down_item.xml" value="0.24270833333333333" />
         <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/layout/main_test.xml" value="0.5154241645244216" />
         <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/layout/slide_item_container.xml" value="0.24270833333333333" />
+        <entry key="..\:/Documents/GitHub/ShuttleDrive-G4/ShuttleDrive-G4/app/src/main/res/menu/bottom_nave_menu.xml" value="0.24270833333333333" />
       </map>
     </option>
   </component>
