@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="20dp"
+        android:padding="8dp"
         android:gravity="center"
         android:paddingTop="40dp"
         android:layout_weight="1">
@@ -23,9 +23,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
+            android:orientation="vertical"            >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -45,7 +43,7 @@
 
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="30dp"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="24dp"
@@ -54,10 +52,12 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="50dp"
+                                android:layout_height="wrap_content"
                                 android:text="Boarding point Accra (10:00)"
                                 android:textColor="@color/black"
-                                android:textSize="14sp" />
+                                android:layout_marginTop="2dp"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/poppins"/>
 
                         </LinearLayout>
                         <LinearLayout
@@ -71,10 +71,12 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="50dp"
+                                android:layout_height="wrap_content"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"
-                                android:text="Dropping point Kumasi (10:00)"/>
+                                android:layout_marginTop="2dp"
+                                android:textSize="13sp"
+                                android:text="Dropping point Kumasi (10:00)"
+                                android:fontFamily="@font/poppins"/>
 
                         </LinearLayout>
                         <LinearLayout
@@ -88,18 +90,22 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="50dp"
+                                android:layout_height="wrap_content"
                                 android:textColor="@color/black"
-                                android:textSize="14sp"
-                                android:text="February 28, 2022"/>
+                                android:layout_marginTop="2dp"
+                                android:textSize="13sp"
+                                android:text="February 28, 2022"
+                                android:fontFamily="@font/poppins"/>
 
                         </LinearLayout>
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="40dp"
+                            android:layout_height="wrap_content"
                             android:text="Type : AC"
                             android:textColor="@color/black"
-                            android:textSize="16sp"/>
+                            android:layout_marginTop="2dp"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/poppins"/>
 
                     </LinearLayout>
 
@@ -110,160 +116,172 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="@color/black"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="40dp"
                 android:text="SEATS"
                 android:textStyle="bold"
-                android:fontFamily="@font/poppins"/>
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="center"/>
+
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="10dp">
-                <TextView
-                    android:layout_width="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Disabled Person"
-                    android:layout_gravity="center"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"/>
-                <CheckBox
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pregnant Woman"
-                    android:layout_gravity="center"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"/>
-                <CheckBox
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"/>
-            </LinearLayout>
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp">
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp">
-            <TextView
-                android:layout_width="87dp"
-                android:layout_height="wrap_content"
-                android:text="Adult"
-                android:textColor="@color/black"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="87dp"
-                android:layout_height="wrap_content"
-                android:text="Child"
-                android:layout_marginStart="30dp"
-                android:textColor="@color/black"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="87dp"
-                android:layout_height="wrap_content"
-                android:text="Infant"
-                android:layout_marginStart="30dp"
-                android:textColor="@color/black"
-                android:gravity="center"/>
-
-        </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="87dp"
-                    android:layout_height="wrap_content"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-                    android:layout_marginTop="5dp"
-                    app:boxStrokeColor="@color/black">
-                    <AutoCompleteTextView
-                        android:id="@+id/adult"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="0"
-                        android:textColor="@color/white"
-                        android:inputType="none"/>
-                </com.google.android.material.textfield.TextInputLayout>
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="87dp"
-                    android:layout_height="wrap_content"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="30dp"
-                    app:boxStrokeColor="@color/black">
-                    <AutoCompleteTextView
-                        android:id="@+id/child"
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wheelchair" />
+
+                        <CheckBox
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/woman"
+                            android:layout_marginStart="30dp"/>
+
+                        <CheckBox
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="0"
-                        android:textColor="@color/white"
-                        android:inputType="none"/>
-                </com.google.android.material.textfield.TextInputLayout>
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="87dp"
-                    android:layout_height="wrap_content"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginStart="30dp"
-                    app:boxStrokeColor="@color/black">
-                    <AutoCompleteTextView
-                        android:id="@+id/infant"
+                        <TextView
+                            android:layout_width="87dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Adult"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="87dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:gravity="center"
+                            android:text="Child"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="87dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:gravity="center"
+                            android:text="Infant"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:textColor="@color/white"
-                        android:inputType="none"
-                        android:text="31"/>
-                </com.google.android.material.textfield.TextInputLayout>
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                            android:layout_width="87dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            app:boxStrokeColor="@color/black">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/adult"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="none"
+                                android:text="0"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                            android:layout_width="87dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="5dp"
+                            app:boxStrokeColor="@color/black">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/child"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="none"
+                                android:text="0"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                            android:layout_width="87dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="5dp"
+                            app:boxStrokeColor="@color/black">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/infant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="none"
+                                android:text="31"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
             </LinearLayout>
 
 
-                <TextView
+            <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FARE"
                     android:layout_gravity="center"
+                    android:layout_margin="30dp"
+                    android:text="GHc 0.00"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:layout_margin="30dp"/>
+                    android:textSize="25sp" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CONFIRM BOOKING"
-                    android:textColor="@color/white"
+                    android:layout_gravity="center"
                     android:backgroundTint="@color/orange"
-                    android:layout_gravity="center"/>
+                    android:text="CONFIRM BOOKING"
+                    android:textColor="@color/white" />
+
 
         </LinearLayout>
-
-        </LinearLayout>
-
 
     </ScrollView>
 
