@@ -14,8 +14,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
-import com.sailegnik.shuttledrive_g4.MainActivity
 import com.sailegnik.shuttledrive_g4.R
+import com.sailegnik.shuttledrive_g4.login_firebase.LoginActivity
 import com.sailegnik.shuttledrive_g4.utils.IntroSlides.introSliderAdapter
 
 class IntroActivity : AppCompatActivity() {
@@ -61,14 +61,14 @@ class IntroActivity : AppCompatActivity() {
             if (introSliderViewPager.currentItem + 1 < introSliderAdapter.itemCount) {
                 introSliderViewPager.currentItem +=1
             }else{
-                Intent(applicationContext, MainActivity::class.java).also {
+                Intent(applicationContext, LoginActivity::class.java).also {
                     startActivity(it)
                 }
             }
         }
 
         textSkipIntro.setOnClickListener {
-            Intent(applicationContext, MainActivity::class.java).also {
+            Intent(applicationContext, LoginActivity::class.java).also {
                 startActivity(it)
             }
         }

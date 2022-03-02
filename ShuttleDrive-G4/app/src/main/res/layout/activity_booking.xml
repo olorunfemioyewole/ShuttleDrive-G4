@@ -133,36 +133,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="10dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="4dp">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/wheelchair" />
-
-                        <CheckBox
-                            android:layout_width="30dp"
-                            android:layout_height="30dp" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/woman"
-                            android:layout_marginStart="30dp"/>
-
-                        <CheckBox
-                            android:layout_width="30dp"
-                            android:layout_height="30dp" />
-
-                    </LinearLayout>
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -172,27 +144,30 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="87dp"
+                            android:layout_width="85dp"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="Adult"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins" />
 
                         <TextView
-                            android:layout_width="87dp"
+                            android:layout_width="85dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="30dp"
                             android:gravity="center"
                             android:text="Child"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins" />
 
                         <TextView
-                            android:layout_width="87dp"
+                            android:layout_width="85dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="30dp"
                             android:gravity="center"
                             android:text="Infant"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins" />
 
                     </LinearLayout>
 
@@ -200,15 +175,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
-                        android:layout_marginBottom="4dp">
+                        android:layout_marginBottom="4dp"
+                        android:orientation="horizontal">
 
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-                            android:layout_width="87dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            app:boxStrokeColor="@color/black">
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content">
 
                             <AutoCompleteTextView
                                 android:id="@+id/adult"
@@ -216,17 +189,16 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:inputType="none"
-                                android:text="0"
-                                android:textColor="@color/black" />
+                                android:text="@string/_0"
+                                android:fontFamily="@font/poppins"
+                                android:padding="0dp"/>
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-                            android:layout_width="87dp"
+                            android:layout_width="85dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="5dp"
-                            app:boxStrokeColor="@color/black">
+                            android:layout_marginStart="30dp">
 
                             <AutoCompleteTextView
                                 android:id="@+id/child"
@@ -234,17 +206,16 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:inputType="none"
-                                android:text="0"
-                                android:textColor="@color/black" />
+                                android:text="@string/_0"
+                                android:fontFamily="@font/poppins"
+                                android:padding="0dp"/>
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-                            android:layout_width="87dp"
+                            android:layout_width="85dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="5dp"
-                            app:boxStrokeColor="@color/black">
+                            android:layout_marginStart="30dp">
 
                             <AutoCompleteTextView
                                 android:id="@+id/infant"
@@ -252,8 +223,70 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:inputType="none"
-                                android:text="31"
-                                android:textColor="@color/black" />
+                                android:text="@string/_0"
+                                android:fontFamily="@font/poppins"
+                                android:padding="2dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wheelchair"
+                            android:contentDescription="@string/disabled" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/diabled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="none"
+                                android:text="@string/_0"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/poppins"
+                                android:padding="0dp"
+                                tools:ignore="TouchTargetSizeCheck" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/woman"
+                            android:contentDescription="@string/pregnant"
+                            android:layout_marginStart="15dp"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/pregnant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="none"
+                                android:text="@string/_0"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/poppins"
+                                android:padding="0dp"
+                                tools:ignore="TouchTargetSizeCheck" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                     </LinearLayout>
@@ -270,7 +303,8 @@
                     android:layout_margin="30dp"
                     android:text="GHc 0.00"
                     android:textColor="@color/black"
-                    android:textSize="25sp" />
+                    android:textSize="25sp"
+                android:fontFamily="@font/poppins" />
 
                 <Button
                     android:layout_width="wrap_content"
@@ -278,7 +312,8 @@
                     android:layout_gravity="center"
                     android:backgroundTint="@color/orange"
                     android:text="CONFIRM BOOKING"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins" />
 
 
         </LinearLayout>
@@ -291,7 +326,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
-        app:menu="@menu/bottom_nav_menu"
+        app:menu="@menu/drawer_menu"
         android:background="@color/orange">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>

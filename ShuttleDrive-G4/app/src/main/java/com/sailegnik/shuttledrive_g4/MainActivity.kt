@@ -5,7 +5,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.sailegnik.shuttledrive_g4.about.AboutActivity
 import com.sailegnik.shuttledrive_g4.booking.BookingActivity
 import com.sailegnik.shuttledrive_g4.cart.CartActivity
@@ -15,10 +17,11 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var journeyDate: Button
+    lateinit var toggle:ActionBarDrawerToggle
     private lateinit var tvJourneyDate: TextView
     private lateinit var binding: ActivityMainBinding
     private lateinit var bnsearch: Button
+    private lateinit var toolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,9 +31,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        journeyDate = findViewById(R.id.journey_date)
+        toolbar = findViewById(R.id.toolbar)
         tvJourneyDate = findViewById(R.id.tv_journey_date)
         bnsearch = findViewById(R.id.bnsearch)
+
+        //drawer toggle
+        toggle = ActionBarDrawerToggle(this,binding.drawerL,toolbar,R.string.openDrawer,R.string.closeDrawer)
+        binding.drawerL.addDrawerListener(toggle)
+        toggle.syncState()
 
         val myCalendar = Calendar.getInstance()
 
@@ -42,19 +50,19 @@ class MainActivity : AppCompatActivity() {
         }
 
         //listener for date button
-        journeyDate.setOnClickListener{
+        binding.journeyDate.setOnClickListener{
             DatePickerDialog(this, datePickerJ, myCalendar.get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
             myCalendar.get(Calendar.DAY_OF_MONTH)).show()
         }
 
         //switching activity after filling fields
-            bnsearch.setOnClickListener{
+            binding.bnsearch.setOnClickListener{
                 val intent = Intent(this, BookingActivity::class.java)
                 startActivity(intent)
             }
 
         //switching activity with bottom nav
-        binding.bottomNav.setOnNavigationItemSelectedListener {
+        binding.navView.setNavigationItemSelectedListener {
             it.isChecked = true
 
             when(it.itemId){

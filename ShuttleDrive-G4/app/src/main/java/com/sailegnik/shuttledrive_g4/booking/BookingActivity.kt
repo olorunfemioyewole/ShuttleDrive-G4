@@ -21,11 +21,18 @@ class BookingActivity : AppCompatActivity() {
         binding = ActivityBookingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //implementing drop down list for seats
         val seats = resources.getStringArray(R.array.seats)
-        val arrayAdapter = ArrayAdapter(this, R.layout.drop_down_item, seats)
-        binding.adult.setAdapter(arrayAdapter)
-        binding.child.setAdapter(arrayAdapter)
-        binding.infant.setAdapter(arrayAdapter)
+        val seatArrayAdapter = ArrayAdapter(this, R.layout.drop_down_item, seats)
+        binding.adult.setAdapter(seatArrayAdapter)
+        binding.child.setAdapter(seatArrayAdapter)
+        binding.infant.setAdapter(seatArrayAdapter)
+
+        //implementing drop down list for disabled/pregnant
+        val care = resources.getStringArray(R.array.care)
+        val careArrayAdapter = ArrayAdapter(this, R.layout.drop_down_item, care)
+        binding.diabled.setAdapter(careArrayAdapter)
+        binding.pregnant.setAdapter(careArrayAdapter)
 
 
 

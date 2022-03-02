@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "924351866630",
+    "project_id": "shuttledrive-g4",
+    "storage_bucket": "shuttledrive-g4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924351866630:android:bffbd56535bd5ff6b26087",
+        "android_client_info": {
+          "package_name": "com.sailegnik.shuttledrive_g4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924351866630-sga7vekq5mrpa7okv4rbn0pmgdq234c3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB60S4zt_Cri2--qtzPPIAjk3AFaNVtjCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924351866630-sga7vekq5mrpa7okv4rbn0pmgdq234c3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

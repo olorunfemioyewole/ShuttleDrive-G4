@@ -2,6 +2,19 @@
     <string name="app_name">ShuttleDrive-G4</string>
     <string name="skip_intro">SKIP</string>
     <string name="next">NEXT</string>
+    <string name="textview">TextView</string>
+    <string name="disabled">disabled</string>
+    <string name="pregnant">pregnant</string>
+    <string name="_0">0</string>
+    <string name="login">Login</string>
+    <string name="loginHead">Welcome Shuttle Buddy</string>
+    <string name="signup_prompt">Don\'t have an account? <b>Sign Up</b></string>
+    <string name="signup">SignUp</string>
+    <string name="login_prompt">Already have an account? <b>Login</b></string>
+    <string name="name">Olorunfemi Elias Oyewole</string>
+    <string name="email">eliasikechi14@gmail.com</string>
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
 
     <string-array name="seats">
         <item>1</item>
@@ -24,5 +37,19 @@
         <item>18</item>
         <item>19</item>
         <item>20</item>
+    </string-array>
+
+    <string-array name="care">
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
     </string-array>
 </resources>
