@@ -8,6 +8,7 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.sailegnik.shuttledrive_g4.MainActivity
 import com.sailegnik.shuttledrive_g4.R
 import com.sailegnik.shuttledrive_g4.databinding.ActivityLoginBinding
 
@@ -88,7 +89,7 @@ class LoginActivity : AppCompatActivity() {
                 val firebaseUser = firebaseAuth.currentUser
                 val email = firebaseUser!!.email
                 Toast.makeText(this, "Logged in as $email", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this,ProfileActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
             .addOnFailureListener{ e->
@@ -103,7 +104,7 @@ class LoginActivity : AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if(firebaseUser != null){
             //user is already logged in
-            startActivity(Intent(this,ProfileActivity::class.java))
+            startActivity(Intent(this,MainActivity::class.java))
             finish()
         }
     }
