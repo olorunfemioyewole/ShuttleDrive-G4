@@ -31,11 +31,6 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //configure ActionBar //enable back button
-        /*actionBar = supportActionBar!!
-        actionBar.title = "Sign Up"
-        actionBar.setDisplayHomeAsUpEnabled(true)
-        actionBar.setDisplayShowHomeEnabled(true)*/
 
         //configure progress dialog
         progressDialog = ProgressDialog(this)
@@ -50,6 +45,12 @@ class SignUpActivity : AppCompatActivity() {
         binding.signupBn.setOnClickListener {
             //validate data
             validateData()
+        }
+
+        //handle register
+        binding.loginprompt.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
     }
 
