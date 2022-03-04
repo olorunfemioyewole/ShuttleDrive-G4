@@ -6,10 +6,8 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.sailegnik.shuttledrive_g4.MainActivity
 import com.sailegnik.shuttledrive_g4.R
 import com.sailegnik.shuttledrive_g4.databinding.ActivityLoginBinding
 
@@ -17,7 +15,7 @@ class LoginActivity : AppCompatActivity() {
     //view binding
     private lateinit var binding: ActivityLoginBinding
     //action bar
-    private lateinit var actionBar: ActionBar
+//    private lateinit var actionBar: ActionBar
     //progress dialog
     private lateinit var progressDialog: ProgressDialog
     //firebase Auth
@@ -32,11 +30,11 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //configure action bar
+        /*configure action bar
         actionBar = supportActionBar!!
-        actionBar.title = "Login"
+        actionBar.title = "Login"*/
 
-        //configure action bar
+        //configure progress dialog
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Please wait")
         progressDialog.setMessage("Logging in...")
@@ -90,7 +88,7 @@ class LoginActivity : AppCompatActivity() {
                 val firebaseUser = firebaseAuth.currentUser
                 val email = firebaseUser!!.email
                 Toast.makeText(this, "Logged in as $email", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this,MainActivity::class.java))
+                startActivity(Intent(this,ProfileActivity::class.java))
                 finish()
             }
             .addOnFailureListener{ e->
@@ -105,7 +103,7 @@ class LoginActivity : AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if(firebaseUser != null){
             //user is already logged in
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this,ProfileActivity::class.java))
             finish()
         }
     }

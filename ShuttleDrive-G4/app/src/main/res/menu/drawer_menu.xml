@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<group android:checkableBehavior="single">
+    <group
+        android:checkableBehavior="single">
     <item android:id="@+id/home"
         android:title="Home"
         android:icon="@drawable/home"/>
@@ -9,12 +10,24 @@
         android:title="Tickets"
         android:icon="@drawable/ticket"/>
 
-    <item android:id="@+id/about"
-        android:title="About Us"
-        android:icon="@drawable/about"/>
+        <item android:id="@+id/history"
+            android:title="History"
+            android:icon="@drawable/hist"/>
 
     <item android:id="@+id/cart"
         android:title="Cart"
         android:icon="@drawable/cart"/>
-</group>
+
+        <item android:id="@+id/feedback"
+            android:title="Feedback"
+            android:icon="@drawable/feed"/>
+
+        <item android:id="@+id/about"
+            android:title="About Us"
+            android:icon="@drawable/about"/>
+
+        <item android:id="@+id/profile"
+            android:title="Profile"
+            android:icon="@drawable/prof"/>
+    </group>
 </menu>
