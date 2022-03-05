@@ -4,5 +4,5 @@
     android:layout_height="wrap_content"
     android:textColor="@color/black"
     android:padding="5dp"
-    android:textSize="14sp"
-    android:text="TextView"/>
+    android:textSize="13sp"
+    android:text="@string/textview"/>

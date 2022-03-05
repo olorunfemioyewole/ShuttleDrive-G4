@@ -29,4 +29,8 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
     </style>
+
+    <style name="Theme.toolbar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <item name="colorOnPrimary">@color/orange</item>
+    </style>
 </resources>
