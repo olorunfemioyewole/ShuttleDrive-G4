@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.sailegnik.shuttledrive_g4.R
@@ -15,8 +14,6 @@ import com.sailegnik.shuttledrive_g4.databinding.ActivitySignUpBinding
 class SignUpActivity : AppCompatActivity() {
     //view binding
     private lateinit var binding: ActivitySignUpBinding
-    //action bar
-    private lateinit var actionBar: ActionBar
     //progressDialog
     private lateinit var progressDialog: ProgressDialog
     //firebaseAuth
