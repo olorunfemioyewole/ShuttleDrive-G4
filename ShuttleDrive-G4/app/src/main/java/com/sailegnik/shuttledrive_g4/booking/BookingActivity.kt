@@ -75,6 +75,7 @@ class BookingActivity : AppCompatActivity() {
             intent.putExtra("disabled", disabled.text.toString())
             intent.putExtra("pregnant", pregnant.text.toString())
             intent.putExtra("fare", fare.text)
+            intent.putExtra("img", i_shuttleImg)
             startActivity(intent)
         }
     }
