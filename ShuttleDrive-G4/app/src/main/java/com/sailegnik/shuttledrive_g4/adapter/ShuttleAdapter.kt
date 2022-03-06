@@ -29,9 +29,11 @@ class ShuttleAdapter(
     override fun onBindViewHolder(holder: ShuttleViewHolder, position: Int) {
         val dataPosition = BookingList[position]
 
+        holder.name.text = dataPosition.name
         holder.fromLoc.text = dataPosition.fromLoc
         holder.toLoc.text = dataPosition.toLoc
         holder.date.text = dataPosition.date
+        holder.time.text = dataPosition.time
         holder.type.text = dataPosition.AC
 
         holder.learnersClick.setOnClickListener{
@@ -51,10 +53,12 @@ class ShuttleAdapter(
     }
 
     class ShuttleViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
+        val name: TextView = itemView.findViewById(R.id.listName)
         val imgUrl: ImageView = itemView.findViewById(R.id.shuttleItemImg)
         val fromLoc: TextView = itemView.findViewById(R.id.listFromLoc)
         val toLoc: TextView = itemView.findViewById(R.id.listToLoc)
         val date: TextView = itemView.findViewById(R.id.listDate)
+        val time: TextView = itemView.findViewById(R.id.listTime)
         val type: TextView = itemView.findViewById(R.id.listType)
         val learnersClick: CardView = itemView.findViewById(R.id.booking_item)
     }

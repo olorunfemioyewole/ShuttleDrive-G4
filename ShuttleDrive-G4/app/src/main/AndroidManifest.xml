@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShuttleDriveG4">
         <activity
+            android:name=".payment.SuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".payment.PaymentMethActivity"
+            android:exported="false" />
+        <activity
+            android:name=".payment.PaymentActivity"
+            android:exported="false" />
+        <activity
             android:name=".booking.BookingListActivity"
             android:exported="false" />
         <activity
