@@ -41,22 +41,23 @@
             android:fontFamily="@font/poppins"
             android:gravity="center"
             android:text="Name"
-            android:textColor="@color/black"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            style="@style/TextAppearance.AppCompat.Body1"/>
+
         <TextView
             android:id="@+id/listFromLoc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/listName"
             android:layout_marginStart="10dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="5dp"
-            android:layout_below="@id/listName"
             android:layout_toEndOf="@+id/profile_image_root"
             android:fontFamily="@font/poppins"
             android:gravity="center"
             android:text="From"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            style="@style/TextAppearance.AppCompat.Body1" />
 
         <TextView
             android:id="@+id/listToLoc"
@@ -69,8 +70,8 @@
             android:fontFamily="@font/poppins"
             android:gravity="center"
             android:text="To"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            style="@style/TextAppearance.AppCompat.Body1"/>
 
         <TextView
             android:id="@+id/listDate"
@@ -84,8 +85,8 @@
             android:fontFamily="@font/poppins"
             android:gravity="center"
             android:text="Date"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            style="@style/TextAppearance.AppCompat.Body1"/>
 
         <TextView
             android:id="@+id/listTime"
@@ -99,8 +100,8 @@
             android:fontFamily="@font/poppins"
             android:gravity="center"
             android:text="Time"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            style="@style/TextAppearance.AppCompat.Body1" />
 
         <TextView
             android:id="@+id/listType"
@@ -114,9 +115,9 @@
             android:fontFamily="@font/poppins"
             android:gravity="center"
             android:text="AC/Non-AC"
-            android:textColor="@color/black"
             android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            style="@style/TextAppearance.AppCompat.Body1" />
 
     </RelativeLayout>
 

@@ -43,6 +43,10 @@ class ProfileActivity : AppCompatActivity() {
         binding.homebn.setOnClickListener{
             startActivity(Intent(this, MainActivity::class.java))
         }
+
+        binding.logo.setOnClickListener{
+            startActivity(Intent(this, MainActivity::class.java))
+        }
     }
 
     private fun checkUser() {

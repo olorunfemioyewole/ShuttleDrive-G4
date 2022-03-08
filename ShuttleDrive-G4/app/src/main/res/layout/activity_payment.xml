@@ -61,7 +61,7 @@
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
                 android:text="Name"
-                android:textColor="@color/black"
+                style="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="12sp" />
 
             <TextView
@@ -76,7 +76,7 @@
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
                 android:text="From"
-                android:textColor="@color/black"
+                style="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="15sp" />
 
             <TextView
@@ -90,7 +90,7 @@
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
                 android:text="To"
-                android:textColor="@color/black"
+                style="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="15sp" />
 
             <TextView
@@ -105,7 +105,7 @@
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
                 android:text="Date"
-                android:textColor="@color/black"
+                style="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="15sp" />
 
             <TextView
@@ -114,13 +114,13 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/date"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="5dp"
                 android:layout_marginTop="4dp"
+                android:layout_marginEnd="5dp"
                 android:layout_toEndOf="@+id/img_card"
                 android:fontFamily="@font/poppins"
                 android:gravity="center"
                 android:text="AC/Non-AC"
-                android:textColor="@color/black"
+                style="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -129,12 +129,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/type"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_toEndOf="@+id/img_card"
-                android:gravity="center"
-                android:orientation="horizontal"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="5dp">
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -144,6 +143,7 @@
 
                 <TextView
                     android:id="@+id/disabled"
+                    style="@style/TextAppearance.AppCompat.Body1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
@@ -152,8 +152,7 @@
                     android:padding="0dp"
                     android:text="@string/_0"
                     android:textSize="18sp"
-                    tools:ignore="TouchTargetSizeCheck"
-                    android:textColor="@color/black"/>
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -164,6 +163,7 @@
 
                 <TextView
                     android:id="@+id/pregnant"
+                    style="@style/TextAppearance.AppCompat.Body1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
@@ -172,8 +172,7 @@
                     android:padding="0dp"
                     android:text="@string/_0"
                     android:textSize="18sp"
-                    tools:ignore="TouchTargetSizeCheck"
-                    android:textColor="@color/black" />
+                    tools:ignore="TouchTargetSizeCheck" />
 
             </LinearLayout>
 
@@ -190,7 +189,7 @@
         android:layout_gravity="center"
         android:layout_margin="30dp"
         android:text="GHc 0.00"
-        android:textColor="@color/black"
+        style="@style/TextAppearance.AppCompat.Body1"
         android:textSize="25sp"
         android:fontFamily="@font/poppins" />
 

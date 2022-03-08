@@ -18,6 +18,7 @@
         app:tint="@color/orange" />
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_marginTop="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

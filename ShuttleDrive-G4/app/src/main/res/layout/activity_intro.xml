@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".intro.IntroActivity">
+    tools:context=".intro.IntroActivity"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/textSkipIntro"
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
         android:text="@string/skip_intro"
-        android:textColor="@color/white"
+        style="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

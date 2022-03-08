@@ -15,7 +15,7 @@
         android:layout_gravity="center"
         android:layout_margin="30dp"
         android:text="GHc 0.00"
-        android:textColor="@color/black"
+        style="@style/TextAppearance.AppCompat.Body1"
         android:textSize="25sp"
         android:fontFamily="@font/poppins" />
     <TextView

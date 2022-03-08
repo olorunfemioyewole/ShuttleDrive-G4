@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login_firebase.LoginActivity"
-    android:background="@color/white"
     android:padding="20dp">
 
 
@@ -39,7 +38,8 @@
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp">
+        app:boxCornerRadiusTopStart="20dp"
+        style="@style/TextAppearance.AppCompat.Body1">
 
         <EditText
             android:id="@+id/email_t"
@@ -59,7 +59,8 @@
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        style="@style/TextAppearance.AppCompat.Body1">
 
         <EditText
             android:id="@+id/password_t"
@@ -74,10 +75,10 @@
         android:id="@+id/login_bn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login"
         android:layout_below="@id/passord_l"
         android:layout_marginTop="20dp"
-        android:textAllCaps="false"/>
+        android:text="@string/login"
+        android:textAllCaps="false" />
 
     <TextView
         android:id="@+id/signupprompt"

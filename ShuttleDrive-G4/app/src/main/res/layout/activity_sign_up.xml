@@ -37,7 +37,8 @@
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp">
+        app:boxCornerRadiusTopStart="20dp"
+        style="@style/TextAppearance.AppCompat.Body1">
 
         <EditText
             android:id="@+id/email_t"
@@ -58,7 +59,8 @@
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        style="@style/TextAppearance.AppCompat.Body1">
 
         <EditText
             android:id="@+id/password_t"
