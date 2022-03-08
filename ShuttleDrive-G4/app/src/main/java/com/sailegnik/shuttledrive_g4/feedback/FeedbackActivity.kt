@@ -44,6 +44,7 @@ class FeedbackActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please provide feedback", Toast.LENGTH_SHORT).show()
             }
             else{
+                Feed.setText("")
                 feedbackList.add(
                     feedback(Feed.text.toString())
                 )
