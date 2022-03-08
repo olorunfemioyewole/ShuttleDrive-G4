@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShuttleDriveG4">
         <activity
+            android:name=".feedback.FeedbackActivity"
+            android:exported="false" />
+        <activity
             android:name=".payment.SuccessActivity"
             android:exported="false" />
         <activity

@@ -14,6 +14,7 @@ import com.sailegnik.shuttledrive_g4.about.AboutActivity
 import com.sailegnik.shuttledrive_g4.booking.BookingListActivity
 import com.sailegnik.shuttledrive_g4.cart.CartActivity
 import com.sailegnik.shuttledrive_g4.databinding.ActivityMainBinding
+import com.sailegnik.shuttledrive_g4.feedback.FeedbackActivity
 import com.sailegnik.shuttledrive_g4.login_firebase.ProfileActivity
 import com.sailegnik.shuttledrive_g4.ticket.TicketActivity
 import java.text.SimpleDateFormat
@@ -97,6 +98,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.cart-> {val intent = Intent(this, CartActivity::class.java)
                     startActivity(intent)}
                 R.id.profile-> {val intent = Intent(this, ProfileActivity::class.java)
+                    startActivity(intent)}
+                R.id.feedback-> {val intent = Intent(this, FeedbackActivity::class.java)
                     startActivity(intent)}
             }
 
