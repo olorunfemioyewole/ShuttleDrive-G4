@@ -19,7 +19,7 @@ class ShuttleAdapter(
 ): RecyclerView.Adapter<ShuttleAdapter.ShuttleViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShuttleViewHolder {
-        val rootView = LayoutInflater.from(context).inflate(R.layout.booking_list_item,parent,false)
+        val rootView = LayoutInflater.from(context).inflate(R.layout.booking_list_item, parent,false)
         return ShuttleViewHolder(rootView)
     }
     interface HandleShuttleClick{
